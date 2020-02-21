@@ -1,0 +1,330 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html,body{
+    background-color: rgb(235, 235, 235);
+    width:100%;
+    height:100%;
+    padding: 400px auto;
+}
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+@keyframes lowb {
+  from {
+    box-shadow: 0px 0px 30px 10px red;
+  }
+  from {
+    box-shadow: 0px 0px 50px 10px red;
+  }
+}
+.container .status-bar {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}
+.container .status-bar .innerWrap {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  line-height: 40px;
+  position: relative;
+}
+.container .status-bar .left {
+  font-size: 25px;
+  position: absolute;
+  display: inline-block;
+  left: 10px;
+  top: 0px;
+}
+.container .status-bar .left .signal {
+  height: 40px;
+  list-style: none;
+}
+.container .status-bar .left .signal .point {
+  margin-top: 13.75px;
+  margin-left: 5px;
+  border-radius: 100%;
+  width: 12.5px;
+  height: 12.5px;
+  float: left;
+  box-sizing: border-box;
+}
+.container .status-bar .left .signal .point:nth-child(1) {
+  margin-left: 0px;
+}
+.container .status-bar .left .signal .operator {
+  font-weight: 300;
+  margin-left: 10px;
+}
+.container .status-bar .right {
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  top: 0px;
+}
+.container .status-bar .center {
+  font-size: 10;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.container .status-bar.in-deep-color {
+  color: white;
+}
+.container .status-bar.in-deep-color .point {
+  border: solid white 1px;
+}
+.container .status-bar.in-deep-color .hard {
+  background-color: white;
+}
+.container .status-bar.in-light-color {
+  color: black;
+}
+.container .status-bar.in-light-color .point {
+  border: solid black 1px;
+}
+.container .status-bar.in-light-color .hard {
+  background-color: black;
+}
+.container .status-bar.weixin-color {
+  background-color: rgba(38, 38, 38, 0.9);
+}
+.container .status-bar.qq-color {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.container .main {
+  width: 100%;
+}
+.container .main .talk-title {
+  width: 100%;
+  height: 88px;
+  position: fixed;
+  top:0px;
+  z-index: 1000;
+}
+.container .main .talk-title .innerWrap {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 88px;
+  font-size: 33px;
+  position: relative;
+}
+.container .main .talk-title .back-btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: inline-block;
+  height: 88px;
+  width: 88px;
+}
+.container .main .talk-title .back-btn:after {
+  content: "<";
+  line-height: 88px;
+  font-size: 50px;
+  font-weight: 300;
+  margin-left: -40px;
+}
+.container .main .talk-title .linkman {
+  height: 88px;
+  width: 88px;
+  position: absolute;
+  right: 0px;
+}
+.container .main .talk-title .linkman i {
+  font-size: 55px;
+}
+.container .main .talk-title.weixin-color {
+  background-color: rgba(38, 38, 38, 0.9);
+  color: white;
+  font-weight: 300;
+}
+.container .main .talk-title.weixin-color .back-btn:after {
+  font-weight: 300;
+  color: white;
+}
+.container .main .talk-title.qq-color {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  font-weight: 300;
+}
+.container .main .talk-title.qq-color .back-btn:after {
+  font-weight: 300;
+  color: black;
+}
+.container .main .msg-box {
+  margin-top: 148px;
+}
+.container .main .msg-box .content-box {
+  margin: 20px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 88px;
+  width: 100%;
+  position: relative;
+}
+.container .main .msg-box .content-box .username {
+  font-size: 28px;
+  position: absolute;
+}
+.container .main .msg-box .content-box .img-radius-wrap {
+  position: absolute;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.container .main .msg-box .content-box .img-radius-wrap .user-buddha {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+.container .main .msg-box .content-box .text {
+  overflow: hidden;
+  font-size: 30px;
+  margin-top: 40px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  max-width: 500px;
+  width: auto;
+  white-space: normal;
+  background-color: white;
+  word-break: break-all;
+  display: block;
+}
+.container .main .msg-box .content-box:last-child {
+  margin-bottom: 118px;
+}
+.container .main .msg-box .left .username {
+  left: 100px;
+}
+.container .main .msg-box .left .img-radius-wrap {
+  left: 15px;
+  top: 15px;
+}
+.container .main .msg-box .left .text {
+  margin-left: 100px;
+}
+.container .main .msg-box .right .username {
+  right: 100px;
+}
+.container .main .msg-box .right .img-radius-wrap {
+  right: 15px;
+}
+.container .main .msg-box .right .text {
+  margin-left: auto;
+  margin-right: 100px;
+}
+.container .main .msg-box .system {
+  text-align: center;
+}
+.container .main .msg-box .system .text {
+  font-size: 30px;
+  display: inline-block;
+  background-color: gainsboro;
+  padding: 3px 40px;
+  border-radius: 1005px;
+  color: gray;
+}
+.container .main .input-wrap {
+  height: 98px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: rgba(225, 225, 225, 0.9);
+}
+.container .main .input-wrap.show-function-area {
+  height: 528px;
+}
+.container .main .input-wrap .voice-input {
+  position: absolute;
+  height: 98px;
+  width: 98px;
+  display: inline-block;
+}
+.container .main .input-wrap .icon-box {
+  text-align: center;
+  line-height: 98px;
+}
+.container .main .input-wrap .icon-box i {
+  font-size: 60px;
+}
+.container .main .input-wrap .emoji-input {
+  position: absolute;
+  right: 98px;
+  height: 98px;
+  width: 98px;
+  display: inline-block;
+}
+.container .main .input-wrap .more-input {
+  position: absolute;
+  right: 0px;
+  height: 98px;
+  width: 98px;
+  display: inline-block;
+}
+.container .main .input-wrap .more-input i {
+  font-size: 80px !important;
+  font-weight: 300;
+}
+.container .main .input-wrap .input-box {
+  display: inline-block;
+  height: 80px;
+  width: 456px;
+  box-sizing: border-box;
+  position: relative;
+  top: 13px;
+  left: 98px;
+  padding: 15px 10px;
+}
+.container .main .input-wrap .send{
+	display: inline-block;
+  height: 60px;
+  width: 120px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: absolute;
+  top: 13px;
+  left: 554px;
+  background-color: rgb(9,187,7);
+  padding: 18px 33px;
+  color: white;
+}
+.container .main .input-wrap .input-box .input-css {
+  border: none;
+  box-sizing: border-box;
+  border-radius: 13px;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  outline: none;
+  padding-left: 20px;
+}
+.container .main .input-wrap .input-box .hidden {
+  display: none;
+}
+.container .main .input-wrap .input-box #send-btn {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  height: 98px;
+  width: 196px;
+}
+.container .main .input-wrap .input-box #send-btn:after {
+  content: "发送";
+  font-size: 40px;
+}
+.container .main .input-wrap .function-area {
+  width: 100%;
+  height: 430px;
+}
+/*# sourceMappingURL=hichat.css.map */

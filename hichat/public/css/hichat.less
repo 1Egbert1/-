@@ -1,0 +1,338 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: rgb(235, 235, 235);
+    width:600px;
+    height: 900px;
+    margin: 0px auto;
+}
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+
+@keyframes lowb {
+    from {
+        box-shadow: 0px 0px 30px 10px red;
+    }
+    from {
+        box-shadow: 0px 0px 50px 10px red;
+    }
+}
+
+.container {
+    .status-bar {
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        top: 0px;
+        z-index: 1000;
+        .innerWrap {
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            line-height: 33px;
+            position: relative;
+        }
+        .left {
+            font-size: 25px;
+            position: absolute;
+            display: inline-block;
+            left: 10px;
+            top: 0px;
+            .signal {
+                height: 40px;
+                list-style: none;
+                .point {
+                    margin-top: 13.75px;
+                    margin-left: 5px;
+                    border-radius: 100%;
+                    width: 12.5px;
+                    height: 12.5px;
+                    float: left;
+                    box-sizing: border-box;
+                    &:nth-child(1) {
+                        margin-left: 0px;
+                    }
+                }
+                .hard {}
+                .operator {
+                    font-weight: 300;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .right {
+            position: absolute;
+            display: inline-block;
+            right: 10px;
+            top: 0px;
+        }
+        .center {
+            font-size: ;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        &.in-deep-color {
+            color: white;
+            .point {
+                border: solid white 1px;
+            }
+            .hard {
+                background-color: white;
+            }
+            .operator {}
+        }
+        &.in-light-color {
+            color: black;
+            .point {
+                border: solid black 1px;
+            }
+            .hard {
+                background-color: black;
+            }
+            .operator {}
+        }
+        &.weixin-color {
+            background-color: rgba(38, 38, 38, 0.9);
+        }
+        &.qq-color {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    }
+    .main {
+        width: 100%;
+        .talk-title {
+            width: 100%;
+            height: 88px;
+            position: fixed;
+            top: 40px;
+            z-index: 1000;
+            .innerWrap {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: 88px;
+                font-size: 40px;
+                position: relative;
+            }
+            .back-btn {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                display: inline-block;
+                height: 88px;
+                width: 88px;
+                &:after {
+                    content: "<";
+                    line-height: 88px;
+                    font-size: 50px;
+                    font-weight: 300;
+                    margin-left: -40px;
+                }
+            }
+            .linkman {
+                height: 88px;
+                width: 88px;
+                position: absolute;
+                right: 0px;
+                i {
+                    font-size: 55px;
+                }
+            }
+            &.weixin-color {
+                background-color: rgba(38, 38, 38, 0.9);
+                color: white;
+                font-weight: 300;
+                .back-btn:after {
+                    font-weight: 300;
+                    color: white;
+                }
+            }
+            &.qq-color {
+                background-color: rgba(255, 255, 255, 0.9);
+                color: black;
+                font-weight: 300;
+                .back-btn:after {
+                    font-weight: 300;
+                    color: black;
+                }
+            }
+        }
+        .msg-box {
+            margin-top: 148px;
+            .content-box {
+                margin: 20px 0px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                min-height: 88px;
+                width: 100%;
+                //              background-color: saddlebrown;
+                position: relative;
+                .username {
+                    font-size: 28px;
+                    position: absolute;
+                }
+                .img-radius-wrap {
+                    position: absolute;
+                    display: inline-block;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    .user-buddha {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100%;
+                    }
+                }
+                .text {
+                    overflow: hidden;
+                    font-size: 30px;
+                    margin-top: 40px;
+                    padding: 10px 20px;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    max-width: 500px;
+                    width: auto;
+                    white-space: normal;
+                    background-color: white;
+                    word-break: break-all;
+                    display: block;
+                }
+                &:last-child {
+                    margin-bottom: 118px;
+                }
+            }
+            .left {
+                .username {
+                    left: 100px;
+                }
+                .img-radius-wrap {
+                    left: 15px;
+                    top: 15px;
+                }
+                .text {
+                    margin-left: 100px;
+                }
+            }
+            .right {
+                .username {
+                    right: 100px;
+                }
+                .img-radius-wrap {
+                    right: 15px;
+                }
+                .text {
+                    margin-left: auto;
+                    margin-right: 100px;
+                }
+            }
+            .system {
+                text-align: center;
+                .text {
+                    font-size: 30px;
+                    display: inline-block;
+                    background-color: gainsboro;
+                    padding: 3px 40px;
+                    border-radius: 1005px;
+                    color: gray;
+                }
+            }
+        }
+        .input-wrap {
+            height: 98px;
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+            //          border-top: solid black 1px;
+            background-color: rgba(225, 225, 225, 0.9);
+            &.show-function-area {
+                height: 528px;
+            }
+            .voice-input {
+                position: absolute;
+                height: 98px;
+                width: 98px;
+                display: inline-block;
+            }
+            .icon-box {
+                text-align: center;
+                line-height: 98px;
+                i {
+                    font-size: 60px;
+                }
+            }
+            .emoji-input {
+                position: absolute;
+                right: 98px;
+                height: 98px;
+                width: 98px;
+                display: inline-block;
+            }
+            .more-input {
+                i {
+                    font-size: 80px !important;
+                    font-weight: 300;
+                }
+                position: absolute;
+                right: 0px;
+                height: 98px;
+                width: 98px;
+                display: inline-block;
+            }
+            .input-box {
+                display: inline-block;
+                height: 98px;
+                width: 456px;
+                box-sizing: border-box;
+                position: relative;
+                top: 0px;
+                left: 98px;
+                padding: 15px 10px;
+                .input-css{
+                    border: none;
+                    box-sizing: border-box;
+                    border-radius: 13px;
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                    font-size: 30px;
+                    outline: none;
+                    padding-left: 20px;
+                }
+                #voice-input{
+                    
+                }
+                .hidden {
+                    display: none;
+                }
+                #send-btn {
+                    display: inline-block;
+                    position: absolute;
+                    right: 0px;
+                    height: 98px;
+                    width: 196px;
+                    &:after {
+                        content: "发送";
+                        font-size: 40px;
+                    }
+                }
+            }
+            .function-area {
+                width: 100%;
+                height: 430px;
+            }
+        }
+    }
+}
