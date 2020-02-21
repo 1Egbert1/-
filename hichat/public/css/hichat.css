@@ -2,11 +2,16 @@
   padding: 0px;
   margin: 0px;
 }
-html,body{
-    background-color: rgb(235, 235, 235);
-    width:100%;
-    height:100%;
-    padding: 400px auto;
+html {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #ebebeb;
+  width: 600px;
+  height: 900px;
+  margin: 0px auto;
 }
 button {
   background-color: rgba(0, 0, 0, 0);
@@ -32,7 +37,7 @@ button {
   width: 100%;
   height: 100%;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 33px;
   position: relative;
 }
 .container .status-bar .left {
@@ -69,7 +74,7 @@ button {
   top: 0px;
 }
 .container .status-bar .center {
-  font-size: 10;
+  font: size 10;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -105,7 +110,7 @@ button {
   width: 100%;
   height: 88px;
   position: fixed;
-  top:0px;
+  top: 40px;
   z-index: 1000;
 }
 .container .main .talk-title .innerWrap {
@@ -113,7 +118,7 @@ button {
   height: 100%;
   text-align: center;
   line-height: 88px;
-  font-size: 33px;
+  font-size: 40px;
   position: relative;
 }
 .container .main .talk-title .back-btn {
@@ -277,26 +282,13 @@ button {
 }
 .container .main .input-wrap .input-box {
   display: inline-block;
-  height: 80px;
+  height: 98px;
   width: 456px;
   box-sizing: border-box;
   position: relative;
-  top: 13px;
+  top: 0px;
   left: 98px;
   padding: 15px 10px;
-}
-.container .main .input-wrap .send{
-	display: inline-block;
-  height: 60px;
-  width: 120px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  position: absolute;
-  top: 13px;
-  left: 554px;
-  background-color: rgb(9,187,7);
-  padding: 18px 33px;
-  color: white;
 }
 .container .main .input-wrap .input-box .input-css {
   border: none;
@@ -327,4 +319,3 @@ button {
   width: 100%;
   height: 430px;
 }
-/*# sourceMappingURL=hichat.css.map */
